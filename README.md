@@ -23,10 +23,11 @@ A Go utility to sign Ethereum messages using AWS KMS, with support for message h
 
     \`\`\`
     git clone https://github.com/Jamill-hallak/ethereum-aws-kms-signer.git
+   
     cd ethereum-aws-kms-signer
     \`\`\`
 
-2. Install dependencies:
+3. Install dependencies:
 
     \`\`\`
     go mod tidy
