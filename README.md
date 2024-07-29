@@ -38,10 +38,10 @@ A Go utility to sign Ethereum messages using AWS KMS, with support for message h
 Create a `.env` file in the root directory with the following content:
 
 \`\`\`
-AWS_REGION=<your-aws-region>
-AWS_KMS_KEY_ID=<your-kms-key-id>
-AWS_ACCESS_KEY_ID=<your-access-key-id>
-AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
+AWS_REGION= your-aws-region
+AWS_KMS_KEY_ID= your-kms-key-id
+AWS_ACCESS_KEY_ID= your-access-key-id
+AWS_SECRET_ACCESS_KEY= your-secret-access-key
 \`\`\`
 
 ## Usage
