@@ -8,8 +8,8 @@ import (
 	"log"
 	"os"
 
-	"your_module/aws"
-	"your_module/ethereum"
+	"github.com/your_username/ethereum-aws-kms-signer/aws"
+	"github.com/your_username/ethereum-aws-kms-signer/ethereum"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/joho/godotenv"
@@ -51,8 +51,8 @@ func main() {
 		return
 	}
 
-	fmt.Printf("Message Hash: %s\n", messageHash.Hex())
-	fmt.Printf("EthSignedMessage Hash: %s\n", ethSignedMessageHash.Hex())
+	fmt.Printf("Message Hash: %s\n", common.BytesToHash(messageHash[:]).Hex())
+	fmt.Printf("EthSignedMessage Hash: %s\n", common.BytesToHash(ethSignedMessageHash[:]).Hex())
 
 	// Sign the Ethereum signed message hash
 	signatureDER, err := aws.SignMessage(context.Background(), svc, keyID, ethSignedMessageHash)

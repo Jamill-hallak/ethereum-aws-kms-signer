@@ -3,8 +3,10 @@ package aws
 import (
 	"context"
 	"crypto/ecdsa"
-	"crypto/elliptic"
 	"encoding/asn1"
+	"math/big"
+
+	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/kms"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/pkg/errors"

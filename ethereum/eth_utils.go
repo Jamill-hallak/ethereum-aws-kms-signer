@@ -7,7 +7,6 @@ import (
 	"encoding/hex"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"math/big"
 )
 
 func GetAddress(pubKey *ecdsa.PublicKey) common.Address {
