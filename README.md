@@ -21,14 +21,14 @@ A Go utility to sign Ethereum messages using AWS KMS, with support for message h
 
 1. Clone the repository:
 
-    \`\`\`sh
-    git clone https://github.com/your-username/ethereum-aws-kms-signer.git
+    \`\`\`
+    git clone https://github.com/Jamill-hallak/ethereum-aws-kms-signer.git
     cd ethereum-aws-kms-signer
     \`\`\`
 
 2. Install dependencies:
 
-    \`\`\`sh
+    \`\`\`
     go mod tidy
     \`\`\`
 
@@ -47,13 +47,13 @@ AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
 
 ### Running the Application
 
-\`\`\`sh
+\`\`\`
 go run main.go
 \`\`\`
 
 ### Example Output
 
-\`\`\`sh
+\`\`\`
 Authorized Signer Address: 0xYourSignerAddress
 Message Hash: 0xYourMessageHash
 EthSignedMessage Hash: 0xYourEthSignedMessageHash
@@ -62,19 +62,6 @@ Signature: 0xYourSignature
 
 ## Code Overview
 
-### Directory Structure
-
-\`\`\`
-.
-├── main.go
-├── aws
-│   ├── kms.go
-│   └── kms_utils.go
-├── ethereum
-│   ├── eth_utils.go
-│   └── eth_signer.go
-└── .env
-\`\`\`
 
 ### main.go
 
