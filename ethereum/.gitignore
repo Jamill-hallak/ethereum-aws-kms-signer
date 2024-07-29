@@ -1,0 +1,35 @@
+# Ignore Go build artifacts
+bin/
+obj/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Ignore vendor directory
+vendor/
+
+# Ignore environment variables file
+.env
+
+# Ignore editor swap files
+*~
+*.swp
+
+# Ignore dependency directories and files
+node_modules/
+package-lock.json
+
+# Ignore log files
+*.log
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
